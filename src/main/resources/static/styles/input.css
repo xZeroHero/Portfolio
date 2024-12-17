@@ -12,7 +12,10 @@
 }
 
 .fadeHero {
+    opacity: 0;
     animation: fadeInScaleUp 1s;
+    animation-delay: 0.15s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeInScaleUp {
