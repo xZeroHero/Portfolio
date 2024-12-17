@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+
+
+}
+
+.fadeHero {
+    animation: fadeInScaleUp 1s;
+}
+
+@keyframes fadeInScaleUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.revealBottom {
+    transform: translateY(100%) translateX(100%);
+    animation: revealBottom 1s forwards;
+}
+
+@keyframes revealBottom {
+    0% {
+        transform: translateY(100%) translateX(100%);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+.revealTop {
+    transform: translateY(100%) translateX(-100%);
+    animation: revealTop 1s forwards;
+}
+
+@keyframes revealTop {
+    0% {
+        transform: translateY(-100%) translateX(-100%);
+    }
+    100% {
+        transform: translateY(0%) translateX(0%);
+    }
+}

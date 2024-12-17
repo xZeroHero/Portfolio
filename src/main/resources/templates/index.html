@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/styles/output.css}">
+
+
+</head>
+<body class="bg-slate-900 w-[100vw] h-full text-white font-mono overflow-x-hidden ">
+
+<nav class="flex justify-center sticky h-[50px] top-20 z-10  ">
+    <div id="navbar-list" class="flex flex-row w-1/3 backdrop-blur-lg align-middle justify-around rounded-3xl">
+        <div class="flex justify-center">
+        <span class="relative mt-4 before:content-['00'] before:inline-block before:absolute before:top-[-1em] before:right-[-.2em] before:text-[0.75em] before:text-gray-600">
+            // home
+        </span>
+        </div>
+        <div class="flex justify-center">
+        <span class="relative mt-4 before:content-['01'] before:inline-block before:absolute before:top-[-1em] before:right-[-.2em] before:text-[0.75em] before:text-gray-600">
+            // expertise
+        </span>
+        </div>
+        <div class="flex justify-center">
+        <span class="relative mt-4 before:content-['02'] before:inline-block before:absolute before:top-[-1em] before:right-[-.2em] before:text-[0.75em] before:text-gray-600">
+            // work
+        </span>
+        </div>
+        <div class="flex justify-center">
+        <span class="relative mt-4 before:content-['03'] before:inline-block before:absolute before:top-[-1em] before:right-[-.2em] before:text-[0.75em] before:text-gray-600">
+            // experience
+        </span>
+        </div>
+
+    </div>
+</nav>
+
+<div class="bg-amber-50"></div>
+
+<header class="backdrop-blur-lg h-40 z-30">
+    header
+
+</header>
+
+
+<section id="hero" class="relative w-full min-h-[500px] max-h-[500px] flex justify-center ">
+    <div class="absolute w-[800px] h-[800px] top-[200px] left-[-210px] bg-opacity-60 ">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="100%" id="blobSvg">
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color: rgba(255, 95, 109, 0.8);"></stop>
+                    <stop offset="100%" style="stop-color: rgba(255, 195, 113, 0.8);"></stop>
+                </linearGradient>
+            </defs>
+            <path fill="url(#gradient)">
+                <animate attributeName="d"
+                         dur="50000ms"
+                         repeatCount="indefinite"
+                         values="M378,328.5Q376,407,300,385.5Q224,364,209,320.5Q194,277,115.5,212.5Q37,148,120,96Q203,44,292.5,64Q382,84,381,167Q380,250,378,328.5Z;
+                                M357.5,322.5Q366,395,284,428.5Q202,462,127,403.5Q52,345,85.5,266Q119,187,170.5,156Q222,125,271,143.5Q320,162,334.5,206Q349,250,357.5,322.5Z;
+                                M368.5,299.5Q329,349,273,372.5Q217,396,208.5,335Q200,274,140,221Q80,168,144.5,120Q209,72,251,134.5Q293,197,350.5,223.5Q408,250,368.5,299.5Z;
+                                M378,328.5Q376,407,300,385.5Q224,364,209,320.5Q194,277,115.5,212.5Q37,148,120,96Q203,44,292.5,64Q382,84,381,167Q380,250,378,328.5Z"
+                >
+                </animate>
+            </path>
+        </svg>
+    </div>
+
+    <div class="absolute w-[800px] h-[800px] top-[-200px] right-[-100px] bg-opacity-60 ">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="100%" id="blobSvg">
+            <defs>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color: rgba(10,252,204,0.69);"></stop>
+                    <stop offset="100%" style="stop-color: rgb(144, 78, 149);"></stop>
+                </linearGradient>
+            </defs>
+            <path fill="url(#gradient2)">
+                <animate attributeName="d"
+                         dur="50000ms"
+                         repeatCount="indefinite"
+                         values="
+                         M357.5,322.5Q366,395,284,428.5Q202,462,127,403.5Q52,345,85.5,266Q119,187,170.5,156Q222,125,271,143.5Q320,162,334.5,206Q349,250,357.5,322.5Z;
+                         M368.5,299.5Q329,349,273,372.5Q217,396,208.5,335Q200,274,140,221Q80,168,144.5,120Q209,72,251,134.5Q293,197,350.5,223.5Q408,250,368.5,299.5Z;
+                         M378,328.5Q376,407,300,385.5Q224,364,209,320.5Q194,277,115.5,212.5Q37,148,120,96Q203,44,292.5,64Q382,84,381,167Q380,250,378,328.5Z;
+                         M357.5,322.5Q366,395,284,428.5Q202,462,127,403.5Q52,345,85.5,266Q119,187,170.5,156Q222,125,271,143.5Q320,162,334.5,206Q349,250,357.5,322.5Z"
+                >
+                </animate>
+            </path>
+        </svg>
+    </div>
+
+    <div class=" mt-10 w-5/6  backdrop-blur-md h-[700px] bg-slate-800 bg-opacity-60 rounded-2xl">
+
+        <div class="bg-cyan-400  absolute top-8 left-8 revealBottom "
+             style="height: 200px; width: 200px; clip-path: polygon(0% 0%, 0% 100%, 10% 90%, 10% 10%, 90% 10%, 100% 0%); "></div>
+        <div class="bg-slate-800  absolute top-8 left-8 revealBottom"
+             style="height: 200px; width: 200px; clip-path: polygon(2.5% 2.5%, 2.5% 94.5%, 7.5% 89%, 7.5% 7.5%, 89% 7.5%, 94.5% 2.5%); "></div>
+
+
+        <div class="bg-amber-600  absolute bottom-8 right-8 revealTop"
+             style="height: 200px; width: 200px; clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 10% 90%, 90% 90%, 90% 10%);  "></div>
+        <div class="bg-slate-800  absolute bottom-8 right-8 revealTop"
+             style="height: 200px; width: 200px; clip-path: polygon(97.5% 5.5%, 97.5% 97.5%, 5.5% 97.5%, 11% 92%, 92% 92%, 92% 11%); "></div>
+
+
+        <div class="absolute  bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2 flex justify-center items-center w-5/6 ">
+            <div class=" text-balance inline-block fadeHero">Softwareentwickler mit Leidenschaft für sauberen Code und innovative Lösungen
+                Als Softwareentwickler bringe ich fundierte Erfahrung in der Entwicklung leistungsfähiger und benutzerfreundlicher Anwendungen mit. Mein Fokus liegt auf der effizienten Umsetzung von Softwareprojekten,
+                von der Konzeption bis zur Auslieferung. Mit Expertise in modernen Programmiersprachen und Technologien sorge ich dafür,
+                dass Projekte nicht nur funktionieren, sondern auch skalierbar und wartbar sind.
+            </div>
+
+            <div class="min-w-[400px] min-h-[400px] rounded-full bg-gradient-to-br from-fuchsia-500 to-slate-900 fadeHero relative">
+                <!--from-fuchsia-500
+                    from emerald-500
+                    from-indigo-900
+                    -->
+                <div class="min-w-[380px] min-h-[380px] rounded-full bg-slate-700 absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<div class="bg-black"></div>
+<div class="min-h-[3000px]"></div>
+
+</body>
+</html>
