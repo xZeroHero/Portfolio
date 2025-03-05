@@ -8,6 +8,8 @@
 
 </head>
 <body class="bg-slate-900 w-[100vw] h-full text-white font-mono overflow-x-hidden ">
+<div id="circle" class="circle z-40"></div>
+<div id="circle2" class="circle2 z-40"></div>
 
 <nav class="flex justify-center sticky h-[50px] top-10 z-10  ">
     <div id="navbar-list" class="flex flex-row w-1/3 backdrop-blur-lg align-middle justify-around rounded-3xl">
@@ -37,13 +39,15 @@
 
 <div class="bg-amber-50"></div>
 
-<header class="backdrop-blur-lg h-40 z-30">
-    header
+<header class="backdrop-blur-lg h-40 z-30 text-4xl text-blue-400 ml-20 flex">
+    NicoStegmann
+    <span class="text-gray-400">.</span>
+    <span class="text-fuchsia-400">_</span>
 
 </header>
 
 
-<section id="hero" class="relative w-full min-h-[500px] max-h-[500px] flex justify-center ">
+<section id="hero" class="relative w-full min-h-[900px]  flex justify-center ">
     <div class="absolute w-[800px] h-[800px] top-[200px] left-[-210px] bg-opacity-60 ">
         <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              width="100%" id="blobSvg">
@@ -91,7 +95,7 @@
         </svg>
     </div>
 
-    <div class=" mt-10 w-5/6  backdrop-blur-md h-[700px] bg-slate-800 bg-opacity-60 rounded-2xl fadeHero">
+    <div class="  w-5/6  backdrop-blur-md h-[700px] bg-slate-800 bg-opacity-60 rounded-2xl fadeHero">
 
         <div class="bg-cyan-400  absolute top-8 left-8 revealBottom "
              style="height: 200px; width: 200px; clip-path: polygon(0% 0%, 0% 100%, 10% 90%, 10% 10%, 90% 10%, 100% 0%); "></div>
@@ -132,8 +136,59 @@
 
 </section>
 
+<section class="relative w-full min-h-[900px]  flex justify-center bg-contain bg-repeat  " style="background-image: url('/images/grid.png'); background-size: 20%; opacity: 30%">
+    <div class="absolute bottom-0 left-0 right-0 top-0  w-full overflow-hidden bg-gradient-to-b from-transparent to-slate-900 opacity-100 h-full -z-20"></div>
+<!--    <div class="absolute bottom-0 left-0 right-0 top-0  w-full overflow-hidden bg-gradient-to-b from-slate-900 from-90% to-[#0f111a] h-full -z-10"></div>-->
+    <div class=" mt-20 w-5/6  backdrop-blur-md h-[700px] bg-slate-800 bg-opacity-60 rounded-2xl "></div>
+</section>
+
+<section class="relative w-full min-h-[200px]  flex justify-center  bg-gradient-to-b from-slate-900 to-[#0f111a]" >
+
+
+</section>
+
+<section class="relative w-full min-h-[900px]  flex justify-center  bg-[#0f111a]" >
+    <div class="absolute  right-0 top-[80px]  w-full h-full z-10 bg-no-repeat bg-center opacity-15 " style="background-image: url('/images/background_html.png')"></div>
+</section>
+
 <div class="bg-black"></div>
 <div class="min-h-[3000px]"></div>
+
+
+<script>
+    for (let i = 0; i < 10; i++)
+        console.log('Hello World!')
+
+    const circle = document.getElementById('circle');
+    const circle2 = document.getElementById('circle2');
+
+    document.addEventListener('mousemove', (e) => {
+        const height = circle.offsetHeight;
+        const width = circle.offsetWidth;
+        const height2 = circle2.offsetHeight;
+        const width2 = circle2.offsetWidth;
+
+        setTimeout(() => {
+            circle.style.left = `${e.clientX - width/2}px`;
+            circle.style.top = `${e.clientY - height/2}px`;
+        }, 60);
+        setTimeout(() => {
+            circle2.style.left = `${e.clientX - width2/2}px`;
+            circle2.style.top = `${e.clientY - height2/2}px`;
+        }, 5);
+    });
+
+/*    document.addEventListener('mousemove', (e) => {
+        const height = circle2.offsetHeight;
+        const width = circle2.offsetWidth;
+
+        setTimeout(() => {
+            circle2.style.left = `${e.pageX - width/2}px`;
+            circle2.style.top = `${e.pageY - height/2}px`;
+        }, 5);
+    });*/
+
+</script>
 
 </body>
 </html>

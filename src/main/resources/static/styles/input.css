@@ -57,3 +57,28 @@
         transform: translateY(0%) translateX(0%);
     }
 }
+
+.circle {
+    border: 2px solid rgb(34 211 238);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(34 211 238);
+    pointer-events: none;
+    position: fixed;
+    top: -10rem;
+    left: -10rem;
+    height: 2rem;
+    width: 2rem;
+    transition: transform 0.4s, background 0.4s;
+}
+
+.circle2 {
+    border: 2px solid rgb(34 211 238);
+    border-radius: 50%;
+    pointer-events: none;
+    position: fixed;
+    top: -10rem;
+    left: -10rem;
+    height: .2rem;
+    width: .2rem;
+    transition: transform 0.4s, background 0.4s;
+}
